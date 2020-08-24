@@ -1,0 +1,57 @@
+In other words, the Interface Inventory is a neatly organized box with all the pieces of your product. 
+In one “compartment” you might have all the buttons collected from the entire product or a family of products.
+In another, all the colors, the styles of text, etc.
+
+
+You also end up with a better understanding of the different phases in a product’s life.
+For example, a collection of all the different tables will show which ones are outdated and need to be refactored to the newest version.
+
+Where to start an Interface Inventory
+Brad Frost suggests that Interface Inventory should start with a simple task of taking a lot of screenshots
+of the UI and categorizing them into chunks in a keynote presentation.
+
+He divided our CSS (or rather Less, since we’re using a Less preprocessor to build and manage our stylesheets) into:
+=>Elements — the smallest individual pieces of the interface which act as building blocks for components (e.g. buttons, form fields…)
+=>Components — independent and repeatedly used pieces of the interface built out of elements (e.g. toolbar item, page loader)
+=>Modules — full functionalities built out of components (e.g. toolbar, search)
+=>Layout definitions — All of the above use core files (such as variables, icon font definitions etc.) to unify styling.
+
+
+An easy building block that I decided to start with is color. Since our web development team uses Less,
+I was hoping I’d find Less files full of color variables, which would help me identify the core palette used in our product. 
+After a brief GIT investigation, I identified 6 files listing…116 colors variables.
+
+1_rMd1V4ODO8xb2yT3uZAodA.png
+1_Ma7odG7NOvkxmqZcZaBJzA.png
+
+Encouraged by the initial progress and a growing interest of the team, I then created an inventory of the typography.
+For quite some time, UXPin has always had a strict typographic standard. Inside of the application we use ‘Proxima Nova’ 
+exclusively and only in the two most legible weights (regular and semi-bold). That’s great and definitely creates a sense of consistent design.
+
+1_jnzTAecobuTccmVTAZ9xxg.png
+
+The Inventory of Icons
+The UXPin interface is definitely icon-heavy.
+Nonetheless, my task was just to build a list of our icons.
+I could drop all the SVGs to UXPin and call it a day, but then we wouldn’t have desired sync with development.
+Instead, I went straight to the source and used icon font files to create a repository of icons.
+
+1_A42HmGye1T92jtEOcEBa6Q.gif
+
+The Inventory of Patterns
+With colors, typography and icons all documented in our inventory, it was time to list all the interface patterns.
+
+1_eEDWKeLXAhI99SC8TeNxuw.png
+1_zuNt8f8p-1NFAK6DIaaTLA.png
+1_Eu8M2kTnoYUGGy-vfmJE5A.gif
+1_-X2MSx4dYautLzB0wL8FRg.gif
+
+
+
+Create the UI Inventory for the Design System
+1. Create the Patterns Inventory
+2. Create the Colors Inventory
+3. Create the Typography Inventory
+4. Create the Icons Inventory
+
+
